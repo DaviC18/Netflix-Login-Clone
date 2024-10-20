@@ -30,7 +30,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="mr landing flex flex-col gap-4 rounded py-[2.1rem] px-16 relative">
+    <div className="mr landing flex flex-col gap-4 rounded py-[1.4rem] px-16 relative">
       <h1 className="text-4xl font-bold my-3">Entrar</h1>
       <form
         onSubmit={handleClick}
