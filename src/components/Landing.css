@@ -1,0 +1,112 @@
+:root {
+  --absolute-top: 14.7rem;
+  --absolute-left: 38rem;
+}
+
+.mr {
+  margin: 0 auto;
+}
+
+.landing {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30rem;
+  color: #fff;
+}
+
+form input {
+  background-color: rgba(18, 18, 18, 0.7);
+  border: 1px solid gray;
+  padding: 1em;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+form label {
+  color: #ffffff;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  pointer-events: none;
+  position: relative;
+  top: -40px;
+  left: 10px;
+}
+
+form input:focus {
+  border: 0;
+  padding: 0 1.1rem;
+  padding-top: 1.7rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  outline: 1px solid #fff;
+}
+
+form input:focus + label:nth-of-type(1) {
+  color: #ffffff;
+  top: -52px;
+  left: 17px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+form input:focus + label:nth-of-type(2) {
+  color: #ffffff;
+  top: -38px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+form .mb {
+  top: -21px;
+}
+
+form .height {
+  height: 4.2rem;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+.infos input {
+  display: none;
+}
+
+.infos .check {
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff5c;
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s cubic-bezier(0.68, -0.6, 0.36, 1.6);
+}
+
+.infos .check svg {
+  fill: #000; /* Usar fill ao invés de color para SVG */
+  width: 16px;
+  height: 16px;
+  transition: fill 0.2s cubic-bezier(0.68, -0.6, 0.36, 1.6);
+}
+
+.infos:hover .check {
+  border: 1px solid #fff;
+}
+
+.infos input:checked + .check {
+  background-color: #fff;
+}
+
+.infos input:checked + label svg {
+  fill: #000;
+}
+
+.infos span {
+  position: relative;
+  top: -5.2px;
+}

@@ -1,0 +1,14 @@
+header{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+}
+
+.logo svg{
+    width: 9.25rem;
+    fill: currentColor;
+    color: #ff0000;
+}
